@@ -12,6 +12,12 @@ elForm.addEventListener("submit", function (evt) {
 
   if (inputNumber < 0) {
     alert("Iltimos musbat son kiriting :)")
+    return;
+  }
+
+  if (inputNumber ==="" || isNaN(inputNumber)) {
+    alert("Iltimos son kiriting :)")
+    return;
   }
 
   if (inputNumber % fuzzBuzz === 0) {
